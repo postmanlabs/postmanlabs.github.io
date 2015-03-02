@@ -19,6 +19,16 @@
 
 <script type="text/javascript" src="factory/parallax-js/parallax.min.js"></script>
 <link rel="stylesheet" type="text/css" href="factory/app.css">
+
+<script type="application/javascript">
+    $.preloadImages = function() {
+        for (var i = 0; i < arguments.length; i++) {
+            $("<img />").attr("src", arguments[i]);
+        }
+    }
+
+    $.preloadImages("factory/background.jpg","factory/background-tail.jpg");
+</script>
 </html>
 <body class="spacewalk">
     <div class="banner parallax-window" data-parallax="scroll" data-image-src="factory/background.jpg">
