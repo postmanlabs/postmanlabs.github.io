@@ -6,6 +6,59 @@ body, html {
 }
 .spacewalk {
   .banner {
-    height: 100%;
+    h1 {
+      margin: 0;
+      padding: 60px;
+      padding-top: 400px;
+      text-align: center;
+      color:#ffffff;
+      text-shadow: 0 0 2px rgba(0,0,0,0.3);
+    }
+
+    #navigation {
+      padding-right: 30px;
+      ul li a {
+        transition: color 0.35s;
+        color: rgba(255,255,255,0.8);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          color: rgba(255,255,255,1) !important;
+        }
+      }
+    }
+  }
+
+  .hero {
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0,0,0,0.3);
+    padding: 60px;
+  }
+
+  #footer ul li a {
+    transition: color 0.35s;
+  }
+
+  .content {
+    text-align: center;
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h2{
+        margin-bottom: 10px;
+        margin-top: 30px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+    }
+  }
+
+  .pm-logo {
+    padding-right: 40px;
   }
 }
